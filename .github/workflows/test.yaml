@@ -35,7 +35,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         environment-file: devtools/conda-envs/test_env.yaml
-        activate-environment: test
+        activate-environment: test_env
         auto-update-conda: true
         auto-activate-base: false
         show-channel-urls: true
