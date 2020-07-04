@@ -13,7 +13,9 @@ dependencies:
   - matplotlib-base
   - blessings
   - ipykernel
+  - mpi4py
   # testing
   - pytest
   - pytest-cov
+  - nose
   - codecov
