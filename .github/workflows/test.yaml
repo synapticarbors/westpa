@@ -15,11 +15,10 @@ on:
 
 jobs:
   test:
-    name: Test on {{ '${{ matrix.os }}' }}, Python {{ '${{ matrix.python-version }}' }}
-    runs-on: {{ '${{ matrix.os }}' }}
+    name: Test on Linux, Python {{ '${{ matrix.python-version }}' }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest,]
         python-version: [3.7, 3.8]
 
     steps:
