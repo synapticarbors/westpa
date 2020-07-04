@@ -47,7 +47,7 @@ jobs:
       run: |
         conda info --all
         conda list
-        python -m pip install -e .
+        python -m pip install -e . --no-use-pep517
         conda list
 
     - name: Run tests
