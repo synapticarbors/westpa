@@ -46,6 +46,7 @@ jobs:
       shell: bash -l {0}
       run: |
         conda info --all
+        conda list
         python -m pip install -e .
         conda list
 
