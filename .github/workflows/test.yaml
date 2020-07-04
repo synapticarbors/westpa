@@ -15,11 +15,11 @@ on:
 
 jobs:
   test:
-    name: Test on Linux, Python {{ '${{ matrix.python-version }}' }}
+    name: Test on Linux, Python {{ matrix.python-version }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.7, 3.8]
+        python-version: ["3.7", "3.8"]
 
     steps:
     - uses: actions/checkout@v1
@@ -33,7 +33,7 @@ jobs:
     # More info on options: https://github.com/goanpeca/setup-miniconda
     - uses: goanpeca/setup-miniconda@v1
       with:
-        python-version: {{ '${{ matrix.python-version }}' }}
+        python-version: {{ matrix.python-version }}
         environment-file: devtools/conda-envs/test_env.yaml
         activate-environment: test
         auto-update-conda: true
