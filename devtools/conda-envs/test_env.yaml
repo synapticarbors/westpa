@@ -1,0 +1,19 @@
+name: test
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - cython
+  - numpy
+  - scipy
+  - h5py
+  - pyyaml
+  - pyzmq
+  - matplotlib-base
+  - blessings
+  - ipykernel
+  # testing
+  - pytest
+  - pytest-cov
+  - codecov
